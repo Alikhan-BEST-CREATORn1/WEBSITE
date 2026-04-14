@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Премиальный контейнерный дом</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;scroll-behavior:smooth}
+    body {background:#f8f9fb;color:#1a1a1a}
+
+    header {display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0}
+
+    .logo {font-size:26px;font-weight:700}
+    .nav {display:flex;gap:25px;align-items:center}
+    .nav a {text-decoration:none;color:#555;font-weight:500}
+    .nav a:hover {color:#000}
+    .phone {font-weight:600}
+
+    section {padding:80px 60px}
+
+    .hero {display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+
+    h1 {font-size:46px;margin-bottom:20px}
+    p {color:#666;margin-bottom:20px}
+
+    .btn {padding:12px 22px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    .btn-primary {background:#2b2d42;color:#fff}
+
+    .image {width:100%;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.1)}
+
+    .center {text-align:center}
+
+    .cards {display:grid;grid-template-columns:1fr 1fr;gap:30px}
+
+    footer {text-align:center;padding:40px;color:#777}
+
+    @media(max-width:900px){
+      .hero,.cards{grid-template-columns:1fr}
+      section{padding:40px 20px}
+      h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SAVAY</div>
+  <div class="nav">
+    <a href="#projects">Проекты</a>
+    <a href="#about">О компании</a>
+    <a href="#contacts">Контакты</a>
+    <div class="phone">+7 903 968-05-59</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Премиальный складной контейнерный дом с гарантией 15 лет</h1>
+    <p>Современные решения из Китая: быстро, надежно и выгодно</p>
+    <button class="btn btn-primary">Скачать каталог</button>
+  </div>
+  <img class="image" src="image1.jpg">
+</section>
+
+<section id="projects">
+  <h1 class="center">Проекты и планировка</h1>
+  <div class="cards">
+    <div>
+      <img class="image" src="image1.jpg">
+      <p class="center">Планировка складного контейнерного дома</p>
+    </div>
+    <div>
+      <img class="image" src="image2.jpg">
+      <p class="center">Логотип и контакты компании</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h1 class="center">О компании SAVAY</h1>
+  <p class="center">Надежный поставщик контейнерных домов из Китая</p>
+  <h2 class="center">Телефон: +86 130 7307 4360</h2>
+</section>
+
+<section id="contacts">
+  <h1 class="center">Контакты</h1>
+  <p class="center">+7 903 968-05-59 — номер сотрудника компании САВАЙ</p>
+  <p class="center">+86 130 7307 4360 — номер владельца компании САВАЙ</p>
+</section>
+
+<footer>
+  © 2026 SAVAY
+</footer>
+
+</body>
+</html>
