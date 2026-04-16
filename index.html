@@ -16,6 +16,20 @@
   font-family:'Inter',sans-serif;
 }
 
+  <script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+  
 body{
   background:#ffffff;
   color:#0a1f44;
@@ -130,6 +144,17 @@ footer{
   color:#fff;
   padding:20px;
   text-align:center;
+}
+  /* АНИМАЦИЯ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
 </head>
